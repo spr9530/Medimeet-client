@@ -137,7 +137,7 @@ export function AppointmentCard({ appointment, userRole, refetchAppointments }) 
 
   // Join video call
   const handleJoinVideoCall = async () => {
-    navigate(`/video-call?channel=${appointment.videoSessionId}&token=${encodeURIComponent(appointment.videoToken)}&appId=c3f5a580fd8d475cba3e64eee2027e3f&uid=${appointment.patientId}`)
+    navigate(`/video-call?channel=${appointment.videoSessionId}&token=${encodeURIComponent(appointment.videoToken)}&appId=c3f5a580fd8d475cba3e64eee2027e3f&uid=${appointment.patientId._id}`)
   };
 
   // Success effects

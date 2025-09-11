@@ -9,7 +9,6 @@ export default function VideoCallPage() {
   const query = useQuery();
   const channel = query.get("channel"); // previously sessionId
   const token = decodeURIComponent(query.get("token"));
-  console.log(token)
   const appId = query.get("appId");
   const uid = query.get("uid") ;
 
